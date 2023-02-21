@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+    <title>Document</title>
+</head>
+<body onload="get_orders('{{csrf_token}}')">
+    <header>
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <a href="/">
+                        <img src="static/img/logo2.svg">
+                    </a>
+                </div>
+
+                <div class="nav">
+                    <a href="/">ГЛАВНАЯ</a>
+                    <a href="">МЕНЮ</a>
+                    <a href="">О НАС</a>
+                    <a href="">КОРЗИНА</a>
+                </div>
+
+                <div class="phone">
+                    <div class="nav number">
+                        <a href="#">8-923-607-3420</a>
+                    </div>
+
+                    <div class="nav-text">
+                        Свяжитесь с нами по телефону
+                    </div>
+                </div>
+
+            </div>
+          <p>{{result}}</p>
+        </div>
+    </header>
+<script src="{% static 'scripts/scripts.js' %}"></script>
+
+</body>
+</html>

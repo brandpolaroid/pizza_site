@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    margin: 0px 166px;
+}
+
+.header-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-logo{
+    padding-right: 150px;
+}
+
+.nav a{
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 25px;
+}
+
+.number a{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.nav-text{
+    font-weight: 300;
+}
+
+.order-btn a{
+    background-color: #ffda36;
+    padding: 10px 38px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.pizza {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+
+.pizza-elem{
+    padding-top: 100px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.pizza-name{
+    font-size: 20pt;
+    font-weight: 800;
+}
+
+.pizza-text{
+    text-align: justify;
+    height:100px;
+}
+
+.pizza-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pizza-price{
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.pizza-btn a{
+    background-color: #ffda36;
+    padding: 10px 38px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.pizza-added{
+    visibility: hidden;
+}
+
+.csrf-token{
+    visibility: hidden;
+}
+
+.pizza-added{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-text-label{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.offers {
+    display: flex;
+    justify-content: center;
+}
+
+table td{
+    width: 100px;
+}
+table tr{
+    width: 100px;
+    text-align: left;
+}
+
+.user-data{
+    display: grid;
+    width: 400px;
+    margin-bottom: 50px;
+}
